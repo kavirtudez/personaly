@@ -70,8 +70,7 @@ export const ProfileSection = () => {
             Kazz Virtudez
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-          Aspiring ML Engineer/Data Engineer, skilled in Python for data analytics and model development. Consistent top student and national competition winner, passionate about human-centered AI and Data Analytics. 
-          </p>
+          I work at the intersection of machine learning, data engineering, and full stack development — building systems that are as thoughtful as they are technical. With a background shaped by academic excellence and national hackathons, I’m driven by curiosity, clarity, and the impact of well-crafted solutions          </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
           <button 
@@ -87,7 +86,7 @@ export const ProfileSection = () => {
             <ArrowDown className="size-4"/>
           </button>
           <a 
-            href="https://drive.google.com/file/d/1DL2saHIz975kD7UKFlmiOG4EOSK0Pe17/view" 
+            href="https://drive.google.com/file/d/10L7wHtgEC6JdDry6ynHUkiAO97DiD1dg/view?usp=sharing" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border border-white/15 bg-indigo-600 text-white h-12 px-6 rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-indigo-700"
