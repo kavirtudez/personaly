@@ -15,7 +15,7 @@ import NeuNet from '@/assets/images/NeuNet.png';
 import Brieflet from '@/assets/images/Brieflet.png';
 import ArrowSense from '@/assets/images/ArrowSense.png'
 import Dove from '@/assets/images/Dove.png';
-import GobyerKnow from '@/assets/images/GobyerKnow.png';
+import GobyerKnow from '@/assets/images/Gobyerknow.png';
 import Komyutable from '@/assets/images/komyutable.png';
 import Lively from '@/assets/images/Lively.png';
 import Agrikado from '@/assets/images/Agrikado.png';
