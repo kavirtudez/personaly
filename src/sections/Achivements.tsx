@@ -1,0 +1,133 @@
+import BetaMLSA from "@/assets/images/LevelBeta.png";
+import DesignHub from "@/assets/images/designhub.png";
+import SIH from "@/assets/images/SIH.png";
+import Hacktober from "@/assets/images/hacktober.png";
+import Bertelsmann from "@/assets/images/Bertelsmann.png";
+import BPIDataWave from "@/assets/images/bpi.png";
+import NCRC from "@/assets/images/NCRC.png";
+import IBMTechXchange from "@/assets/images/ibm.png";
+import PJDSC from "@/assets/images/pjdsc.png";
+import ColdStart from "@/assets/images/coldstart.png";
+import DeansList from "@/assets/images/deanslist.png";
+import SikapTala from "@/assets/images/sikaptala.png";
+import Codelympics from "@/assets/images/codelympics.png";
+import LuntiangParangal from "@/assets/images/luntiang.png";
+import { SectionHeader } from "@/components/SectionHeader";
+import Image from "next/image";
+import { Card } from "@/components/Card";
+import { Fragment } from "react";
+
+export const Achievements = [
+  {
+    title: "BPI DataWave 2024",
+    description: "Top 5 Finalist (GenAI Track) for AI-powered MSME inventory solution; recognized by BPI for innovation in data and AI.",
+    year: "2024",
+    icon: BPIDataWave,
+  },
+  {
+    title: "SIKAPTala 2025",
+    description: "Champion in Python Quiz Bee, Top Finalist in Research, HackerRank, and Hackathon categories.",
+    year: "2025",
+    icon: SikapTala,
+  },
+  {
+    title: "Codelympics 2024",
+    description: "Champion at national coding competition hosted by DLSU-D and industry partners.",
+    year: "2024",
+    icon: Codelympics,
+  },
+  {
+    title: "NCRC 2024",
+    description: "National Collegiate Research Conference finalist for AI-powered civic transparency platform.",
+    year: "2024",
+    icon: NCRC,
+  },
+  {
+    title: "IBM TechXchange 2024",
+    description: "Top 100 Global Finalist for AI-based government transparency solution.",
+    year: "2024",
+    icon: IBMTechXchange,
+  },
+  {
+    title: "Philippine Junior Data Science Challenge",
+    description: "Top 10 Finalist for commuter-focused data science application tackling public transport issues.",
+    year: "2024",
+    icon: PJDSC,
+  },
+  {
+    title: "Cold Start Hackathon",
+    description: "Top 3 Winner for sustainable e-commerce platform supporting local farmers.",
+    year: "2024",
+    icon: ColdStart,
+  },
+  {
+    title: "Dean’s Lister",
+    description: "Consistent First Honor’s Dean’s List awardee with a GPA of 3.85/4.0 in BS Computer Science – Intelligent Systems.",
+    year: "Ongoing",
+    icon: DeansList,
+  },
+  {
+    title: "Luntiang Parangal 2025",
+    description: "University distinction awarded for exemplary leadership, service, and consistent representation of DLSU-D in national and international competitions.",
+    year: "2025",
+    icon: LuntiangParangal,
+  },
+  
+];
+
+
+export const AchivementsSection = () => {
+  return (
+    <div className="py-16">
+      <div className="max-w-full md:max-w-4xl lg:max-w-[100rem] mx-auto">
+        <SectionHeader
+          eyebrow="Achivements"
+          title="What I have accomplished till now?"
+          description="Doing many amazing things has been a part of my college life, but there's still a lot to be done, so I'm working on it."
+        />
+
+        <div
+          className="mt-12 flex overflow-x-clip py-4 -my-4"
+          style={{
+            maskImage:
+              "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+          }}
+        >
+          <div className="flex gap-8 pr-8 flex-none animate-move-left [animation-duration:70s] hover:[animation-play-state:paused]">
+            {[...new Array(2)].fill(0).map((_, index) => (
+              <Fragment key={index}>
+                {Achievements.map((achievement) => (
+                  <Card
+                    key={achievement.title}
+                    className="max-w-[23rem] md:max-w-md p-6 md:p-8 lg:max-w-lg hover:-rotate-3 transition duration-300"
+                  >
+                    <div className="flex gap-4 items-center">
+                      <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0 lg:size-20">
+                        <Image
+                          src={achievement.icon}
+                          alt={achievement.title}
+                          className="max-h-full"
+                        />
+                      </div>
+                      <div>
+                        <div className="font-semibold lg:text-2xl">
+                          {achievement.title}
+                        </div>
+                        <div className="text-sm text-white/40 lg:text-lg">
+                          {achievement.year}
+                        </div>
+                      </div>
+                    </div>
+                    <p className="mt-4 md:mt-6 text-sm text-justify md:text-base lg:text-lg">
+                      {achievement.description}
+                    </p>
+                  </Card>
+                ))}
+              </Fragment>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
