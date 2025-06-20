@@ -16,6 +16,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import Image from "next/image";
 import { Card } from "@/components/Card";
 import { Fragment } from "react";
+import Startup from "@/assets/images/startup.png";
 
 export const Achievements = [
   {
@@ -72,18 +73,23 @@ export const Achievements = [
     year: "2025",
     icon: LuntiangParangal,
   },
-  
+  {
+    title: "StartUp QC 2025",
+    description: "Top University Finalist at StartUP QC 2025 for delivering innovative civic tech solutions and presented the solution to key Quezon City government stakeholders",
+    year: "2025",
+    icon: Startup,
+  }
 ];
 
 
-export const AchivementsSection = () => {
+export const AchievementsSection = () => {
   return (
     <div className="py-16">
       <div className="max-w-full md:max-w-4xl lg:max-w-[100rem] mx-auto">
         <SectionHeader
-          eyebrow="Achivements"
+          eyebrow="Achievements"
           title="What I have accomplished till now?"
-          description="Doing many amazing things has been a part of my college life, but there's still a lot to be done, so I'm working on it."
+          description="I’ve grown through meaningful work, combining academic excellence with national hackathons and real-world tech projects. Every experience has shaped how I build and think, and I’m excited to keep learning and creating what’s next."
         />
 
         <div

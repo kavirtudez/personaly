@@ -89,7 +89,7 @@ export const ProjectsSection = () => {
         <SectionHeader
           eyebrow="What Have I Made?"
           title="Featured Projects"
-          description="Here are some of the projects I have worked on. Each project has helped me grow as a developer and learn new skills."
+          description="Each project here reflects how I learn by building. They've helped me grow not just as a developer, but as a problem solver with a deeper understanding of people, tech, and impact."
         />
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
           {portfolioProjects.map((project, projectIndex) => (

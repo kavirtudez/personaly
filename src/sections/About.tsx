@@ -9,7 +9,7 @@ import { TechToolbox } from "@/components/TechToolBox";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import dlsud from "@/assets/images/dlsud.png";
-import jru from "@/assets/images/jru.png";
+import jru from "@/assets/images/jruu.png";
 import { FaMusic, FaBook, FaDumbbell, FaHiking, FaCampground, FaSeedling, FaChurch, FaSwimmer, FaHandsHelping, FaChalkboardTeacher, FaChess } from 'react-icons/fa';
 import { GiTennisRacket, GiNinjaMask } from 'react-icons/gi';
 import { MdMovie, MdSchool } from 'react-icons/md';

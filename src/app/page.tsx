@@ -6,7 +6,7 @@ import { ProfileSection } from '@/sections/Profile';
 import { ProjectsSection } from '@/sections/Projects';
 import { AboutSection } from '@/sections/About';
 import { Footer } from '@/sections/Footer';
-import { AchivementsSection } from '@/sections/Achivements';
+import { AchievementsSection } from '@/sections/Achievements';
 import { ChatbotSection } from '@/sections/Chatbot';
 import { StarMap } from '@/sections/StarMap';
 import { GameSection } from '@/sections/Game';
@@ -56,7 +56,7 @@ export default function Home() {
       <Header />
       <ProfileSection />
       <ProjectsSection />
-      <AchivementsSection />
+      <AchievementsSection />
       <ChatbotSection />
       <StarMap />
       <AboutSection />

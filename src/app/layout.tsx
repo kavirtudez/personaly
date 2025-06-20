@@ -7,7 +7,7 @@ import Favicon from '@/assets/images/iconn.png';
 
 export const metadata: Metadata = {
   title: "Kazz Virtudez - Portfolio",
-  description: "I work at the intersection of machine learning, data engineering, and full stack development — building systems that are as thoughtful as they are technical. With a background shaped by academic excellence and national hackathons, I’m driven by curiosity, clarity, and the impact of well-crafted solutions",
+  description: "I work at the intersection of machine learning, data engineering, and full stack development by building systems that are as thoughtful as they are technical. With a background shaped by academic excellence and national & international hackathons, I’m driven by curiosity and the impact of well-crafted solutions",
   icons: [{ rel: 'icon', url: Favicon.src }],
 };
 

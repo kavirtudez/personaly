@@ -97,8 +97,8 @@ export const ChatbotSection = () => {
       <div className="container">
         <SectionHeader
           eyebrow="AI Assistant"
-          title="Want to see if I am a great fit for you?"
-          description="I've made an agent that knows me inside out! Let's talk through here."
+          title="Curious if I'd be a great fit for your team?"
+          description="I built a conversational agent that knows me well. Feel free to chat with it and see if we’re a match."
         />
         <div className="mt-12 max-w-3xl mx-auto">
           <div className="bg-gray-900/50 border border-indigo-500/20 rounded-2xl shadow-lg shadow-indigo-500/10 backdrop-blur-lg">
