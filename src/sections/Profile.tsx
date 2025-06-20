@@ -95,7 +95,7 @@ export const ProfileSection = () => {
             <FileText className="size-4" />
           </a>
           <a 
-            href="mailto:kazzvirtudez@gmail.com" 
+            href="https://www.linkedin.com/in/kazzvirtudez/" 
             className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-105"
           >
             <span className="font-semibold">Let's Connect</span>
