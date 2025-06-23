@@ -52,7 +52,7 @@ const initialStars: Omit<Star, 'velocity'>[] = [
     title: "KadaKareer Apprentice",
     year: "Mid–Late 2024",
     order: 4,
-    x: 30,
+    x: 29,
     y: 35,
     description: "At KadaKareer, I joined multiple UX/web design challenges and won Kollab's Choice Award for redesigning a six-page site. I worked on actual health and advocacy platforms, and it taught me that good design is clarity, empathy, and iteration.",
   },
