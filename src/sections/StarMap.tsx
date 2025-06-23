@@ -18,6 +18,7 @@ type Star = {
 
 // Initial star data with positions and descriptions
 // Adjusted to have chronologically related stars closer to each other
+// will add more in the future
 const initialStars: Omit<Star, 'velocity'>[] = [
   {
     id: "foundation",
