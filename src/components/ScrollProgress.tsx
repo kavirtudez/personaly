@@ -34,7 +34,7 @@ export const ScrollProgress = () => {
     if (scrollPercentage < 60) return 'from-blue-500 to-indigo-600';
     if (scrollPercentage < 90) return 'from-indigo-500 to-purple-600';
     return 'from-purple-500 to-pink-600';
-  };
+  }; 
   
   return (
     <div 

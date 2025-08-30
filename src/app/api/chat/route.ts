@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/generative-ai';
 import { NextRequest, NextResponse } from 'next/server';
 
-const genAI = new GoogleGenerativeAI("AIzaSyDq1Wah2um3HXqlcJ3VBM1BF5pY4Gh0Ubc");
+const genAI = new GoogleGenerativeAI("AIzaSyCI_WOz-tRxfOtfO_eAGd3DyY09AfjUJq0");
 
 const model = genAI.getGenerativeModel({
   model: 'gemini-1.5-flash',
@@ -70,11 +70,11 @@ In Luntiang Parangal 2025, University distinction awarded for exemplary leadersh
   
   BPI (Bank of the Philippine Islands) – Data Science & AI Intern
   
-  Built LLM-powered tools for financial data and customer support
-  
-  Used RAG, fine-tuning, prompt engineering
-  
-  Ran predictive models and A/B testing in Python
+  - Led two of BPI’s highest-priority Data Science & AI projects—from architecture to deployment—delivering mission-critical solutions including an internal product officially accepted for Global Markets integration.
+
+- Achieved unprecedented delivery speed, independently completing in three days what previously took three months and a full intern team, while reporting weekly to the Head of Data Science on technical breakthroughs and measurable impact.
+
+- Engineered advanced AI automation systems—multi-agent workflows using Copilot Studio, Agentic AI flows, Power Automate, and FAISS-based RAG—integrating LLM-powered agents into enterprise platforms to boost efficiency, accuracy, and decision-making.
   
   Mobalytics – Market Research Analyst
   
