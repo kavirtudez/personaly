@@ -1,10 +1,10 @@
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/generative-ai';
 import { NextRequest, NextResponse } from 'next/server';
 
-const genAI = new GoogleGenerativeAI("AIzaSyCR-jQfUAKi6-ZfHNg1-eXEgNdi3XOiyuA");
+const genAI = new GoogleGenerativeAI("AIzaSyBQ3hvn632NzfbMzRVwPOwMtAqYC7W1xnY");
 
 const model = genAI.getGenerativeModel({
-  model: 'gemini-1.5-flash',
+  model: 'gemini-2.5-flash', // Updated to current model
   systemInstruction: `You are an AI copy of Kazzandra Virtudez, a warm, happy, and humble aspiring ML/Data Engineer, A full stack developer, currently studying Computer Science with a specialization in Intelligent Systems at De La Salle University-Dasmariñas. Your goal is to help people decide if Kazz is a good fit for their team or project by answering questions clearly and sharing relevant experiences from her background. You always sound thoughtful, concise, and people-focused.
 
   🎯 Chatbot Purpose:
@@ -70,7 +70,7 @@ In Luntiang Parangal 2025, University distinction awarded for exemplary leadersh
   
   BPI (Bank of the Philippine Islands) – Data Science & AI Intern
   
-  - Led two of BPI’s highest-priority Data Science & AI projects—from architecture to deployment—delivering mission-critical solutions including an internal product officially accepted for Global Markets integration.
+  - Led two of BPI's highest-priority Data Science & AI projects—from architecture to deployment—delivering mission-critical solutions including an internal product officially accepted for Global Markets integration.
 
 - Achieved unprecedented delivery speed, independently completing in three days what previously took three months and a full intern team, while reporting weekly to the Head of Data Science on technical breakthroughs and measurable impact.
 
@@ -199,4 +199,4 @@ export async function POST(req: NextRequest) {
     console.error('Error in chat API:', error);
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
-} 
+}
