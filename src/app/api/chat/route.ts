@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/generative-ai';
 import { NextRequest, NextResponse } from 'next/server';
 
-const genAI = new GoogleGenerativeAI("AIzaSyCI_WOz-tRxfOtfO_eAGd3DyY09AfjUJq0");
+const genAI = new GoogleGenerativeAI("AIzaSyCR-jQfUAKi6-ZfHNg1-eXEgNdi3XOiyuA");
 
 const model = genAI.getGenerativeModel({
   model: 'gemini-1.5-flash',
