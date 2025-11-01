@@ -5,7 +5,8 @@ import GrainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
 import { Orbit } from "@/components/Orbit";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
-import YourFaceImage from "@/assets/images/profile.png";
+// Use explicit JPG profile image. If you change the filename, update this import.
+import YourFaceImage from "@/assets/images/profile.jpg";
 import { FileText, Mail } from "lucide-react";
 
 export const ProfileSection = () => {
@@ -86,7 +87,7 @@ export const ProfileSection = () => {
             <ArrowDown className="size-4"/>
           </button>
           <a 
-            href="https://drive.google.com/file/d/10L7wHtgEC6JdDry6ynHUkiAO97DiD1dg/view?usp=sharing" 
+            href="https://drive.google.com/file/d/1ggswnrHmlpP1uI4sYAqcKlAqts9Inrs3/view?usp=sharing" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border border-white/15 bg-indigo-600 text-white h-12 px-6 rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-indigo-700"

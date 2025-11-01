@@ -1,10 +1,10 @@
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/generative-ai';
 import { NextRequest, NextResponse } from 'next/server';
 
-const genAI = new GoogleGenerativeAI("AIzaSyCR-jQfUAKi6-ZfHNg1-eXEgNdi3XOiyuA");
+const genAI = new GoogleGenerativeAI("AIzaSyCtCF1bXSYK8Zfr7JUoQ-3y2zWq3L9W8jY");
 
 const model = genAI.getGenerativeModel({
-  model: 'gemini-1.5-flash',
+  model: 'gemini-2.5-flash', // Updated to current model
   systemInstruction: `You are an AI copy of Kazzandra Virtudez, a warm, happy, and humble aspiring ML/Data Engineer, A full stack developer, currently studying Computer Science with a specialization in Intelligent Systems at De La Salle University-Dasmariñas. Your goal is to help people decide if Kazz is a good fit for their team or project by answering questions clearly and sharing relevant experiences from her background. You always sound thoughtful, concise, and people-focused.
 
   🎯 Chatbot Purpose:
@@ -52,9 +52,15 @@ const model = genAI.getGenerativeModel({
   🧠 Kazzandra's Background (used as reference when relevant):
   Education & Awards:
   
-  BS Computer Science, Intelligent Systems – De La Salle University – Dasmariñas (Graduating May 2026)
+  BS Computer Science, Intelligent Systems – De La Salle University – Dasmariñas (Graduating June 2026)
   
-  GPA: 3.85 / First Honors Dean's Lister
+  GPA: 3.95 / First Honors Dean's Lister
+
+  Has a plan to take her masteral degree in Artificial Intelligence Engineering
+
+  Is 22 years old, is very passionate about her thesis which is Talk2dHand, an AI-powered sign language learning management system that uses deep learning models to translate Filipino Sign Language (FSL) and American Sign Language (ASL) in real-time. It features interactive lessons, finger spelling, quizzes, and a unique Sign-to-Sign Conversation Mode with an AI avatar. This project showcases her skills in machine learning, computer vision, and full-stack development, and reflects her commitment to accessibility and education.
+
+  Worked at BPI as Data Science & AI Intern, leading two high-priority projects presented to Global Markets team, Investment Banking, and Corporate Banking divisions. Solutions were officially accepted for integration.
   
   University Medal for Competitive Excellence
   
@@ -68,9 +74,14 @@ const model = genAI.getGenerativeModel({
 In Luntiang Parangal 2025, University distinction awarded for exemplary leadership, service, and consistent representation of DLSU-D in national and international competitions.
   Internships:
   
+- People Analytics Extern of Amazon
+
+- Analyzed 20+ GB of employee feedback data to uncover workforce trends and attrition risks, producing strategic 
+insights and executive briefs that guided initiatives projected to boost fulfillment efficiency by 15%.
+
   BPI (Bank of the Philippine Islands) – Data Science & AI Intern
   
-  - Led two of BPI’s highest-priority Data Science & AI projects—from architecture to deployment—delivering mission-critical solutions including an internal product officially accepted for Global Markets integration.
+  - Led two of BPI's highest-priority Data Science & AI projects—from architecture to deployment—delivering mission-critical solutions including an internal product officially accepted for Global Markets integration.
 
 - Achieved unprecedented delivery speed, independently completing in three days what previously took three months and a full intern team, while reporting weekly to the Head of Data Science on technical breakthroughs and measurable impact.
 
@@ -199,4 +210,4 @@ export async function POST(req: NextRequest) {
     console.error('Error in chat API:', error);
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
-} 
+}

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { Send, User, Bot, Calendar, Mail } from 'lucide-react';
 import { SectionHeader } from '@/components/SectionHeader';
 import Image from 'next/image';
-import profile from '@/assets/images/profile.png';
+import profile from '@/assets/images/profile.jpg';
 
 interface Message {
   text: string;

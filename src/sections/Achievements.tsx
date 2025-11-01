@@ -4,6 +4,8 @@ import SIH from "@/assets/images/SIH.png";
 import Hacktober from "@/assets/images/hacktober.png";
 import Bertelsmann from "@/assets/images/Bertelsmann.png";
 import BPIDataWave from "@/assets/images/bpi.png";
+import Harvard from "@/assets/images/harvard.png";
+import Stanford from "@/assets/images/stanford.png";
 import NCRC from "@/assets/images/NCRC.png";
 import IBMTechXchange from "@/assets/images/ibm.png";
 import PJDSC from "@/assets/images/pjdsc.png";
@@ -20,11 +22,23 @@ import Startup from "@/assets/images/startup.png";
 
 export const Achievements = [
   {
-    title: "BPI DataWave 2024",
-    description: "Top 5 Finalist (GenAI Track) for AI-powered MSME inventory solution; recognized by BPI for innovation in data and AI.",
-    year: "2024",
-    icon: BPIDataWave,
-  },
+  title: "Harvard CS50x: Computer Science",
+  description: "Completed Harvard’s foundational computer science course covering algorithms, data structures, and software engineering principles.",
+  year: "2025",
+  icon: Harvard,
+},
+{
+  title: "Harvard CS50: Artificial Intelligence with Python",
+  description: "Explored AI fundamentals including search, optimization, ML, and neural networks through hands-on Python projects.",
+  year: "2025",
+  icon: Harvard,
+},
+{
+  title: "Stanford Data Science Workshop",
+  description: "Trained under Dean Jennifer Widom's Instructional Odyssey From Stanford Engineering on core data science workflows, analytics, and ethical data-driven decision-making.",
+  year: "2025",
+  icon: Stanford,
+},
   {
     title: "SIKAPTala 2025",
     description: "Champion in Python Quiz Bee, Top Finalist in Research, HackerRank, and Hackathon categories.",
