@@ -1,5 +1,5 @@
 import ArrowUpRighticon from "@/assets/icons/arrow-up-right.svg";
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
 import { SiHuggingface, SiGmail } from "react-icons/si";
 import { LiaAddressCardSolid } from "react-icons/lia";
 
@@ -9,6 +9,11 @@ const footerLinks = [
     title: "Linkedin",
     href: "https://www.linkedin.com/in/kazzvirtudez/",
     icon: <FaLinkedin />,
+  },
+  {
+    title: "Facebook",
+    href: "https://facebook.com/kvemh",
+    icon: <FaFacebook />,
   },
   {
     title: "Github",
