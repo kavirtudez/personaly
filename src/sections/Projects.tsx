@@ -18,6 +18,11 @@ import SikapTala from "@/assets/images/sikaptala.png";
 import devcon from "@/assets/images/devcon.png";
 import china from "@/assets/images/china.png";
 import china2 from "@/assets/images/china2.png";
+import GAsenso from "@/assets/images/GAsenso.png";
+import saysay from "@/assets/images/saysay.png";
+import c2c from "@/assets/images/c2c.png";
+import gcash from "@/assets/images/gcash.png";
+import asean from "@/assets/images/asean.jpg";
 
 const portfolioProjects = [
   {
@@ -80,6 +85,68 @@ const portfolioProjects = [
       images: [dlsud, SikapTala, devcon]
     }
   },
+  {
+    company: "React, Node.js, Python, Firebase, Gemini API, Stripe/GCash API, Tailwind CSS",
+    year: "2025",
+    title: "GAsenso",
+    results: [
+      { title: "Built an all-in-one business management app for MSMEs" },
+      { title: "Automated sales, bookkeeping, and tax compliance in one place" },
+      { title: "Simplified the Capture → Clarify → Comply → Generate workflow" },
+      { title: "Empowered small business owners to track finances and grow with ease" }
+    ],
+    link: { url: "https://drive.google.com/file/d/1HFRjy5FR_amOKO4s_iTiSVVUvsSV1ekQ/view?usp=sharing", target: "_blank" },
+    liveLink: "https://drive.google.com/file/d/1hjG3rJ0opo8tqoMUAFfIrUC-k5rQ20kJ/view?usp=sharing",
+    image: GAsenso,
+    featured: true,
+    linkText: "Read",
+    liveLinkText: "Watch",
+    awards: {
+      text: "Recognized by",
+      images: [gcash]
+    }
+  },
+  {
+    company: "React, Node.js, Firebase, Gemini API, Google API, Microsoft API, Python",
+    year: "2025",
+    title: "Saysay",
+    results: [
+      { title: "Built an AI-powered meeting assistant for HR and business teams" },
+      { title: "Automatically records meetings, sends summaries, and provides interactive insights" },
+      { title: "Integrated with Microsoft & Google Calendar, Microsoft Copilot, and Firebase for smart storage and categorization" }
+    ],
+    link: { url: "", target: "_self" },
+    liveLink: "https://drive.google.com/file/d/1rc_Id2EbCTRutiKrOFjzHGUGa1ENtwyt/view?usp=sharing",
+    image: saysay,
+    featured: true,
+    linkText: "",
+    liveLinkText: "Watch",
+    awards: {
+      text: "Awarded by",
+      images: [bppi]
+    }
+  },
+  {
+    company: "React, Node.js, Python, Firebase, Gemini API, Tailwind CSS, IoT",
+    year: "2025",
+    title: "C2C",
+    results: [
+      { title: "Built an all-in-one circular sustainability platform for Manila" },
+      { title: "Integrated waste recycling, green nodes, mobility tracking, and community issue reporting" },
+      { title: "Created a seamless Capture → Reward → Redeem → Grow workflow" },
+      { title: "Empowered citizens to turn daily actions into food, medicine, transport credits, and greener public spaces" }
+    ],
+    link: { url: "https://drive.google.com/file/d/1z7qI4WSHoudC-RuI6ImrlHgTEWC6jK5y/view?usp=sharing", target: "_blank" },
+    liveLink: "https://drive.google.com/file/d/1IIRTAbLmThQPco9xq39lO2OBmBGZDVNC/view?usp=sharing",
+    image: c2c,
+    featured: true,
+    linkText: "Read",
+    liveLinkText: "Watch",
+    awards: {
+      text: "Recognized by",
+      images: [asean]
+    }
+  },
 ];
 
 export const ProjectsSection = () => {
@@ -121,12 +188,14 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
                   <div className="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto">
-                    <a href={project.link.url} className="inline-block w-full sm:w-auto">
-                      <button className="bg-white text-gray-950 h-12 w-full px-4 sm:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-                        <span>{project.linkText || 'Github'}</span>
-                        {project.linkText === 'Read' ? <Glasses className="size-5" /> : <GithubIcon className="size-5" />}
-                      </button>
-                    </a>
+                    {project.linkText && project.link.url && (
+                      <a href={project.link.url} className="inline-block w-full sm:w-auto">
+                        <button className="bg-white text-gray-950 h-12 w-full px-4 sm:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                          <span>{project.linkText}</span>
+                          {project.linkText === 'Read' ? <Glasses className="size-5" /> : <GithubIcon className="size-5" />}
+                        </button>
+                      </a>
+                    )}
                     <a href={project.liveLink} className="inline-block w-full sm:w-auto">
                       <button className="bg-indigo-500 text-white h-12 w-full px-4 sm:px-6 rounded-xl font-medium inline-flex items-center justify-center gap-2 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         <span>{project.liveLinkText || 'Website'}</span>
