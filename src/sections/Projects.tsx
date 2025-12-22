@@ -76,7 +76,7 @@ const portfolioProjects = [
       { title: "Used GenAI and Google APIs for voice-text-sign translation and real-time avatar feedback for sign-to-sign AI conversation" }
     ],
     link: { url: "https://github.com/neinzaut/talk2dhand-v3", target: "_blank" },
-    liveLink: "https://drive.google.com/drive/u/0/folders/1rSWuTDz1e--BCZQxgVMmJnioRXnwEdVq",
+    liveLink: "https://drive.google.com/file/d/10IYkZiJbJMPY_E9bHuFLC81fvd7N4i1q/view?usp=sharing",
     image: ArrowSense,
     featured: true,
     liveLinkText: "Watch",
