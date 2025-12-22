@@ -97,7 +97,7 @@ const allProjects = [
       { title: "Integrated real-time static, dynamic, and pose-based gesture recognition" },
       { title: "Used GenAI and Google APIs for voice-text-sign translation and real-time avatar feedback for sign-to-sign AI conversation" }
     ],
-    link: { url: "https://github.com/kavirtudez/ai-converse-feature", target: "_blank" },
+    link: { url: "https://github.com/neinzaut/talk2dhand-v3", target: "_blank" },
     liveLink: "https://www.canva.com/design/DAGjBy6XJdk/0J71xMfa8X--iw8HVDHKcA/view?utm_content=DAGjBy6XJdk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0b42a994bc",
     image: ArrowSense,
     featured: true,
@@ -203,7 +203,7 @@ const allProjects = [
       { title: "Built a multimodal NLP pipeline combining voice commands, grammar parsing, and image responses" },
     ],
     link: { url: "https://github.com/neinzaut/talk2dhand-host", target: "_blank" },
-    liveLink: "https://www.canva.com/design/DAGZP3sd93w/yUWMa5pC-QSejqCTNUf_nQ/view?utm_content=DAGZP3sd93w&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1251d62245",
+    liveLink: "https://drive.google.com/drive/u/0/folders/1rSWuTDz1e--BCZQxgVMmJnioRXnwEdVq",
     image: Talk2dHandV1,
     featured: true,
     liveLinkText: "Watch",
