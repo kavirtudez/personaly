@@ -1,7 +1,13 @@
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/generative-ai';
 import { NextRequest, NextResponse } from 'next/server';
 
-const genAI = new GoogleGenerativeAI("AIzaSyCtCF1bXSYK8Zfr7JUoQ-3y2zWq3L9W8jY");
+const apiKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY;
+
+if (!apiKey) {
+  throw new Error('GOOGLE_GENERATIVE_AI_API_KEY environment variable is not set');
+}
+
+const genAI = new GoogleGenerativeAI(apiKey);
 
 const model = genAI.getGenerativeModel({
   model: 'gemini-2.5-flash', // Updated to current model
